@@ -1,0 +1,5 @@
+Para instalar se hace lo siguiente:
+
+Dentro de la carpeta DirectSports/database está la base de datos en .sql y txt, escoja el que desee e importela a su server de bd
+después escoja la carpeta directsports y muévala a xampp/htdocs/proyectos 
+inicie el local host y abra proyectos/DirectSports

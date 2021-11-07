@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DirectSport</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+</head>
+<body>
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="img/cover.jpg" alt="">
+            <h1>¡ Bienvenido !</h1>
+            <h3>¿ Ya tienes una cuenta ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()" style="background-color: red">Ingresar</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Iniciar sesión</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de usuario">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contraseña">
+                <input type="submit" name="login-btn" class="btn" style="background-color: red" value="Ingresar">
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="img/cover.jpg" alt="">
+            <h1>¡ Bienvenido !</h1>
+            <h3>¿ Aún no tienes cuenta ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()" style="background-color: red">Registrarse</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Registro</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de usuario">
+                <input type="email" name="user-email" class="input-box" placeholder="Email">
+                <input type="password" name="user-pass" class="input-box" placeholder="contraseña">
+				<label for="deporte" style="font-size:20px; margin: 20px;">Deporte favorito:</label>
+				<select name="deporte" placeholder="Password" style="width:50%; height:10%; box-shadow: 15px 15px 25px #a8a8a8; background-color: #ece7e7; font-size:20px; transition: box-shadow 0.5s;" >
+                  <option></option>
+				  <option value="futbol">Futbol</option>
+                  <option value="basquet">Basquet</option>
+                  <option value="ultimate">Ultimate</option>
+                </select>
+				<br><br>
+                <input type="submit" name="signup-btn" class="btn" value="Registrarse" style="background-color: red;">
+            </form>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
